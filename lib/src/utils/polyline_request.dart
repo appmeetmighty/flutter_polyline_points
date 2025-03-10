@@ -101,14 +101,15 @@ class PolylineRequest {
     }
 
     return Uri.https(
-      "maps.googleapis.com",
-      "maps/api/directions/json",
+      "routes.googleapis.com",
+      "directions/v2:computeRoutes",
+      // "maps/api/directions/json",
       _getParams()
-        ..addAll(
-          {
-            'key': apiKey,
-          },
-        ),
+        // ..addAll(
+        //   {
+        //     'key': apiKey,
+        //   },
+        // ),
     );
   }
 
